@@ -1,27 +1,38 @@
 # MNIST_Dataset_Example
-This project demostrates the MNIST dataset which contains a large collection of handwritten digits used to train a neural network while utilizing TensorFlow + Keras. The goal is for demostration of image classification. 
+This project demonstrates how to use the MNIST dataset, a popular collection of handwritten digit images, to train and evaluate a neural network for image classification. By leveraging TensorFlow and Keras, the goal is to develop a model capable of accurately recognizing and classifying handwritten digits, serving as a fundamental example for understanding image recognition techniques in machine learning.
+
 # Table Of Contents
 - [Implementation](#implementation)
-- [Requirements](#requirments)
+- [Requirements](#requirements)
 - [How to Use](#how-to-use)
-- [Error Handling](#error-handling)
 - [References](#references)
+
 # Implementation
-The models implementation consists of an input of the MNIST dataset in which it involves a collection of 70,000 handwritten digits (0-9), with each image being 28x28 pixels. The model is trained using 25 EPOCHs in which it is passed through 25 times, with a validation split of 0.2 to prevent overfitting and validates on a specific portion of the data. 
+The MNIST dataset is a widely used collection of handwritten digit images, consisting of 70,000 grayscale images of digits from 0 to 9. Its primary purpose is to serve as a benchmark for training and evaluating machine learning models in image recognition tasks. By using this dataset, algorithms learn to identify and classify handwritten digits, which helps in developing systems for optical character recognition and other pattern recognition applications. The MNIST dataset is fundamental for understanding and experimenting with image classification techniques in machine learning.
+
 # Requirements 
-This project requires tensorflow, keras, and scikit-learn. It was developed using a Python environment through VSCode.
+- Visual Studio Code (Software)
+- Python Language on Computer (3.12.0)
+- GitBash (Optional)
+
+- This project is designed to run in a VSCode terminal using a Python environment.
 
 Use 'pip install -r requirements.txt' to install the following dependencies:
-
 ```
 tensorflow==2.20.0
 keras==3.11.3
 scikit-learn==1.7.1
 ```
+
 # How to Use
-To utilize this code, a Python environment is installed. Download the MNIST.py file onto your computer into a folder. Then open that folder/file on VSCode. 
-# Error Handling 
-This project does not have any error handling.
+- To run this code, you will need to have a Python environment installed on your computer. It is recommended to use Visual Studio Code as this Python script was written and ran in VSCode. GitBash is also recommended in order to synchronize your VSCode with GitHub.
+- In GitHub, click on the green icon labeled "<> CODE" on the top of this page and copy the HTTPS link.
+- In VSCode, click on "Clone Git Repository" and paste the copied link from GitHub.
+- In the search bar, type in "Python: Create Environment" and then select a preferred environment. This code used .venv as the virtual environment.
+- When the virtual environment is open (appears as .venv in the list of items in the left menu), you may navigate to the [MNIST.py](/src/MNIST.py) file and select it. At this point, you may open your terminal and install the pip requirements for the necessary libraries in order to execute the code. Then, you may hit "Run" on the top right hand corner to execute the code.
+
+- Note: Upon copying the GitHub repository, the dataset should have already been included in order to run the code. If not, please refer to the [mnist_test.csv](/src/mnist_test.csv) file and gather this file into your source folder prior to running the code.
+
 # References 
 - [1]GeeksforGeeks, “MNIST Dataset : Practical Applications Using Keras and PyTorch,” GeeksforGeeks, May 2024. https://www.geeksforgeeks.org/machine-learning/mnist-dataset/
 ‌
